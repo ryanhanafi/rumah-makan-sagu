@@ -2,3 +2,7 @@
     margin: 0;
     padding: 0;
 }
+.navigation {
+    width: 100%;
+    height: 20px;
+}
