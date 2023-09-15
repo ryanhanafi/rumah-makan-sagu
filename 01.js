@@ -19,3 +19,25 @@ setInterval(changeBackground, 5000);
 
 // Initial background image
 changeBackground();
+
+function isElementInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
+function onScroll() {
+    const elementsToAnimate = document.querySelectorAll('.animate-me');
+    elementsToAnimate.forEach(function (element) {
+        if (isElementInViewport(element)) {
+            element.classList.add('animate');
+        }
+    });
+}
+
+window.addEventListener('scroll', onScroll);
+window.addEventListener('load', onScroll); // Jika elemen sudah terlihat saat halaman pertama kali dimuat
