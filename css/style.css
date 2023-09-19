@@ -32,4 +32,8 @@
     background-position: center; /* Posisikan gambar ke tengah */
     background-repeat: no-repeat; /* Hentikan pengulangan gambar jika ada */
   }
-  
+  .animate-me {
+    opacity: 0;
+    transform: translateY(20px); /* Mulai dari luar layar ke atas */
+    transition: opacity 1s, transform 1s;
+}
