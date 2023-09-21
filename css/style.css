@@ -55,3 +55,15 @@
   color: #ffffff;
   padding: 30px;
 }
+.map-container {
+  margin: 20px; /* Ubah sesuai kebutuhan Anda */
+}
+
+/* CSS untuk gaya teks "Our Location" */
+.location-heading {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  background-color: darkgoldenrod;
+}
