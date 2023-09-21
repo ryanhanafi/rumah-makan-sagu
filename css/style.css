@@ -37,3 +37,21 @@
     transform: translateY(20px); /* Mulai dari luar layar ke atas */
     transition: opacity 1s, transform 1s;
 }
+ 
+.header {
+  background-color: #343a40;
+  color: #ffffff;
+  padding: 20px;
+}
+.about-content {
+  padding: 20px;
+}
+.about-image {
+  margin-top: 20px;
+}
+/* Ubah warna latar belakang "Siapa Kami" menjadi biru */
+.siapa-kami {
+  background-color:saddlebrown;
+  color: #ffffff;
+  padding: 30px;
+}
