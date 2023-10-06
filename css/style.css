@@ -1,4 +1,69 @@
-* {
-    margin: 0;
-    padding: 0;
+.d-inline-block{
+    
+}
+.align-text-top{
+    
+}
+.justify-content-end{
+}
+.navbar.bg-body-tertiary {
+    color: #811616; /* Ganti #your-color dengan kode warna latar belakang yang Anda inginkan */
+  }  
+
+  .hero {
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+.feature {
+    background-size: cover; /* Mengisi kotak dengan gambar */
+    background-position: center; /* Posisikan gambar ke tengah */
+    background-repeat: no-repeat; /* Hentikan pengulangan gambar jika ada */
+  }
+  .animate-me {
+    opacity: 0;
+    transform: translateY(20px); /* Mulai dari luar layar ke atas */
+    transition: opacity 1s, transform 1s;
+}
+ 
+.header {
+  background-color: #343a40;
+  color: #ffffff;
+  padding: 20px;
+}
+.about-content {
+  padding: 20px;
+}
+.about-image {
+  margin-top: 20px;
+}
+/* Ubah warna latar belakang "Siapa Kami" menjadi biru */
+.siapa-kami {
+  background-color:saddlebrown;
+  color: #ffffff;
+  padding: 30px;
+}
+.map-container {
+  margin: 20px; /* Ubah sesuai kebutuhan Anda */
+}
+
+/* CSS untuk gaya teks "Our Location" */
+.location-heading {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  background-color: darkgoldenrod;
 }
