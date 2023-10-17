@@ -38,6 +38,11 @@
     transition: opacity 1s, transform 1s;
 }
  
+.d-block{}
+.w-100{}
+.active{}
+.carousel{}
+
 .header {
   background-color: #343a40;
   color: #ffffff;
