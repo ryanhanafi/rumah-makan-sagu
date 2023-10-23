@@ -72,3 +72,13 @@
   margin-bottom: 10px;
   background-color: darkgoldenrod;
 }
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.5); /* Transparansi latar belakang */
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+.carousel-item img {
+  height: 600px; /* Sesuaikan tinggi gambar sesuai kebutuhan Anda */
+  object-fit: cover;
+}
