@@ -28,16 +28,20 @@ function isElementInViewport(el) {
         rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
         rect.right <= (window.innerWidth || document.documentElement.clientWidth)
     );
-}
+};
 
-function onScroll() {
-    const elementsToAnimate = document.querySelectorAll('.animate-me');
-    elementsToAnimate.forEach(function (element) {
-        if (isElementInViewport(element)) {
-            element.classList.add('animate');
+
+window.addEventListener("scroll", () => {
+    const elements = document.querySelectorAll(".animate-me");
+    const windowHeight = window.innerHeight;
+
+    elements.forEach((element) => {
+        const elementOffset = element.getBoundingClientRect().top;
+
+        if (elementOffset < windowHeight / 2) {
+            element.style.opacity = 0; // Set opacity menjadi 0 ketika elemen muncul di tengah jendela
+        } else {
+            element.style.opacity = 1;
         }
     });
-}
-
-window.addEventListener('scroll', onScroll);
-window.addEventListener('load', onScroll); // Jika elemen sudah terlihat saat halaman pertama kali dimuat
+});
