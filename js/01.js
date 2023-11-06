@@ -34,14 +34,17 @@ function isElementInViewport(el) {
 window.addEventListener("scroll", () => {
     const elements = document.querySelectorAll(".animate-me");
     const windowHeight = window.innerHeight;
+    const scrollY = window.scrollY;
 
     elements.forEach((element) => {
         const elementOffset = element.getBoundingClientRect().top;
 
         if (elementOffset < windowHeight / 2) {
-            element.style.opacity = 0; // Set opacity menjadi 0 ketika elemen muncul di tengah jendela
-        } else {
             element.style.opacity = 1;
+        } else {
+            element.style.opacity = 0;
         }
     });
 });
+
+
