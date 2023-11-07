@@ -43,7 +43,7 @@
   }
   .animate-me {
     opacity: 0;
-    transition: opacity 1.7s, transform 1.7s;
+    transition: opacity 1s, transform 1s;
 }
  
 .d-block{}
@@ -182,7 +182,9 @@
   padding: 60px;
   color: aliceblue; 
   background-color: #2f1d58;
-  margin-bottom: 0px;text-align: center;
+  margin-bottom: 0px;
+  text-align: center;
+  width: 100%;
   padding-top: 80px;
   padding-bottom: 0px;
   font-family: 'Playfair Display', serif;
@@ -191,6 +193,7 @@
 .underline{
   background-color: #2f1d58;
   color: white;
+  width: 100%;
   margin: 0px;
   text-align: center;
   padding-top: 0px;
