@@ -43,8 +43,14 @@
   }
   .animate-me {
     opacity: 0;
-    transition: opacity 1s, transform 1s;
+    transition: opacity 1.5s ease;
+  }
+.animate-me.visible {
+  opacity: 1;
+  visibility: collapse;
+  
 }
+
  
 .d-block{}
 .w-100{}
@@ -523,4 +529,141 @@
 
 
 
+.saran{
+  position: relative;
+  display: flex;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  width: calc(100% - 20px);
+  background-color: #fbfafb;
+  height: auto;
+  overflow: auto;
+  flex-direction: row;
+  padding: auto;
+  
+}
+.saran img{
+  width: 550px;
+  
+  gap: 30px;
+  margin-bottom:30px;
+  background-color: lightblue;
+  border-radius: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+  
+}
 
+
+form {
+  background-color: #fff;
+  padding: 20px;
+
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  width: 550px auto;
+  flex-wrap: wrap;
+  height: auto;
+  margin: 10px;
+  
+  
+  
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: calc(100% - 16px);
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="date"] {
+  padding: 8px;
+}
+
+button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+
+
+.order-form {
+  background-color: #fff;
+  padding: 20px;
+
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  width: 550px auto;
+  flex-wrap: wrap;
+  height: auto;
+  margin: 10px;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.form-input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-button:hover {
+  background-color: #45a049;
+}
+
+/* Popup Message Style */
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.disabled-option {
+  color: white; /* Warna abu-abu */
+  background-color: #7AB5B7;
+}
