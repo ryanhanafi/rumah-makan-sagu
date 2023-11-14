@@ -86,7 +86,6 @@ let orderDetails = ""; // Tambahkan variabel untuk menyimpan rincian pesanan
       let customerName = document.getElementById('customerName').value;
       let phoneNumber = document.getElementById('phoneNumber').value;
       let selectedOrder = document.getElementById('selectedOrder').value;
-      let selectedOrder2 = document.getElementById('selectedOrder2').value;
       let orderQuantity = document.getElementById('orderQuantity').value;
       let deliveryAddress = document.getElementById('deliveryAddress').value;
 
@@ -95,7 +94,6 @@ let orderDetails = ""; // Tambahkan variabel untuk menyimpan rincian pesanan
         Nama: ${customerName}
         Nomor Telepon: ${phoneNumber}
         Pilihan Pesanan: ${selectedOrder}
-        Pilihan minuman: ${selectedOrder2}
         Jumlah: ${orderQuantity}
         Alamat Pengiriman: ${deliveryAddress}
       `;
@@ -113,7 +111,6 @@ let orderDetails = ""; // Tambahkan variabel untuk menyimpan rincian pesanan
       document.getElementById('customerName').value = "";
       document.getElementById('phoneNumber').value = "";
       document.getElementById('selectedOrder').value = "";
-      document.getElementById('selectedOrder2').value = "";
       document.getElementById('orderQuantity').value = "";
       document.getElementById('deliveryAddress').value = "";
     }
@@ -129,7 +126,6 @@ let orderDetails = ""; // Tambahkan variabel untuk menyimpan rincian pesanan
       let customerName = document.getElementById('customerName').value;
       let phoneNumber = document.getElementById('phoneNumber').value;
       let selectedOrder = document.getElementById('selectedOrder').value;
-      let selectedOrder2 = document.getElementById('selectedOrder').value;
       let orderQuantity = document.getElementById('orderQuantity').value;
       let deliveryAddress = document.getElementById('deliveryAddress').value;
 
@@ -140,7 +136,6 @@ let orderDetails = ""; // Tambahkan variabel untuk menyimpan rincian pesanan
         Nama: ${customerName}
         Nomor Telepon: ${phoneNumber}
         Pilihan Pesanan: ${selectedOrder}
-        Pilihan minuman: ${selectedOrder2}
         Jumlah: ${orderQuantity}
         Alamat Pengiriman: ${deliveryAddress}
       `;
@@ -150,4 +145,10 @@ let orderDetails = ""; // Tambahkan variabel untuk menyimpan rincian pesanan
 
       // Buka jendela WhatsApp baru dengan pesan terisi
       window.open(whatsappUrl, '_blank').focus();
+    }
+
+    function buynow(){
+      let number = "+6285806875006";
+        var url = "https://wa.me/" + number ;
+      window.open(url, '_blank').focus();
     }
