@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
-<body>
+<body style="font-family:'Playfair Display', serif;">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navbarToggleExternalContent">
         <div class="container">
           <a class="navbar-brand" href=".">
@@ -43,11 +43,14 @@
         </div>
       </nav>
 
+      <div  class="headcathering">
+        <h1>Pesan Cathering </h1>
+        <h4>pesan dalam jumlah banyak dengan sekali klik</h4>
+      </div>
+
       <div class="container about-content">
         <div class="row">
-          <div class="col-md-6 about-image" >
-            <img src="pict/tim page.jpg" alt="Tim Kami" class="img-fluid">
-        </div>
+          
             <div class="col-md-6">
               <form class="order-form">
                 <label for="customerName" class="form-label">Nama:</label>
@@ -56,11 +59,27 @@
                 <label for="phoneNumber" class="form-label">Nomor Telepon:</label>
                 <input type="tel" id="phoneNumber" name="phoneNumber" class="form-input" required>
             
-                <label for="selectedOrder" class="form-label">Pilihan Pesanan:</label>
+                <label for="selectedOrder" class="form-label">Pilihan Makanan:</label>
                 <select id="selectedOrder" name="selectedOrder" class="form-input" required>
-                  <option value="makanan">Makanan</option>
+                  <option value="minuman" class="disabled-option" disabled>-----Menu reguler------</option>
+                  <option value="makanan">Bebek goreng sambel pencit (23k)</option>
+                  <option value="minuman">Bebek bakar sambel pencit (24k)</option>
+                  <option value="minuman">ayam goreng sambel pencit (20k)</option>
+                  <option value="minuman">Ayam bakar sambel pencit (21k) </option>
+                  <option value="minuman">gurame gorang sambel pencit (25k)</option>
+                  <option value="minuman">gurame bakar sambel pencit (27k)</option>
+                  <option value="minuman">Sego babat sambel pencit (24k)</option>
+
+                </select>
+
+
+                <label for="selectedOrder2" class="form-label">Pilihan Pesanan:</label>
+                <select id="selectedOrder2" name="selectedOrder2" class="form-input" required>
                   <option value="minuman" class="disabled-option" disabled>-----Minuman------</option>
-                  <option value="minuman">Minuman</option>
+                  <option value="minuman">Es Teh (4k)</option>
+                  <option value="minuman">Es Jeruk (5k)</option>
+                  <option value="minuman">Es degan (7k)</option>
+                  <option value="minuman">Jus alpukat (9k)</option>
                 </select>
             
                 <label for="orderQuantity" class="form-label">Jumlah:</label>
@@ -78,7 +97,11 @@
                 <p id="orderDetails"></p>
                 <button onclick="closePopup()" class="form-button">Tutup</button>
                 <button onclick="confirmOrder()" class="form-button">Iya</button>
-              </div>   
+              </div>
+                 
+        </div>
+        <div class="col-md-6 about-image" >
+          <img src="pict/tim page.jpg" alt="Tim Kami" class="img-fluid">
         </div>
     </div>
 
