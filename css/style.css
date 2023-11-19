@@ -750,19 +750,14 @@ button:hover {
   margin-left: 10px;
   margin-right: 10px;
   color: white;
-  
-  
-  background-color: #131313;
+  background-color: #2f1d58;
 
 }
 .dtrnasikotak p {
-  text-align: left;
-  display: inline;
+  text-align: center;
+  font-family: #2f1d58;
+  font-size:20px;
 }
 
-.dtrnasikotak h3 {
-  display: inline;
-  text-align: right;
-  margin-right: 40px; /* Atur jarak dari tepi kanan */
-}
 
+npm install -g firebase-tools
