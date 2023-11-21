@@ -760,4 +760,36 @@ button:hover {
 }
 
 
-npm install -g firebase-tools
+.minuman{
+   
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  width: 100%;
+  background-color: #2f1d58;
+  height: auto;
+  overflow: auto;
+  flex-direction: row;
+}
+
+
+.minuman-1{
+color: white;
+width: 500px;
+  height: 350px;
+  margin: 15px;
+  background-color: #2f1d58;
+  font-size: 18px;
+  
+}
+.minuman-2{
+color: white;
+width: 500px;
+height: 300px;
+margin: 15px;
+  background-color: #2f1d58;
+  font-size: 18px;
+  
+}
