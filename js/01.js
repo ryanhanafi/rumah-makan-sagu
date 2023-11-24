@@ -1,36 +1,47 @@
 
 var images = [
-    './pict/dpnsagu.jpg',
-    './pict/dlmsagu.jpg',
-    './pict/dlmsagu2.jpg'
+  './pict/dpnsagu.jpg',
+  './pict/dlmsagu.jpg',
+  './pict/dlmsagu2.jpg'
 ];
 
-print
 var currentImage = 0;
 
 function changeBackground() {
-    if (currentImage === images.length) {
-        currentImage = 0;
-    }var imageUrl = images[currentImage];
-    $('.hero').css('background-image', 'url(' + imageUrl + ')');
-    currentImage++;
+  if (currentImage === images.length) {
+      currentImage = 0;
+  }
+  var imageUrl = images[currentImage];
+  $('.hero').css('background-image', 'url(' + imageUrl + ')');
+  currentImage++;
 }
 
-// Change background image every 5 seconds (5000 milliseconds)
+// Fungsi untuk memuat gambar ke dalam cache
+function preloadImages(urls) {
+  urls.forEach(function(url) {
+      var img = new Image();
+      img.src = url;
+  });
+}
+
+// Memuat gambar ke dalam cache pada saat halaman dimuat
+preloadImages(images);
+
+// Change background image every 10 seconds (10000 milliseconds)
 setInterval(changeBackground, 10000);
 
-// Initial background image
-changeBackground();
-
+// Function to check if an element is in the viewport
 function isElementInViewport(el) {
-    const rect = el.getBoundingClientRect();
-    return (
-        rect.top >= 0 &&
-        rect.left >= 0 &&
-        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-    );
-};
+  const rect = el.getBoundingClientRect();
+  return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+
+
 
 
 window.addEventListener("scroll", () => {
