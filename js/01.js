@@ -1,8 +1,8 @@
 
 var images = [
-    '../pict/gal-01.png',
-    '../pict/gal-03.png',
-    '../pict/gal-05.png'
+    './pict/dpnsagu.jpg',
+    './pict/dlmsagu.jpg',
+    './pict/dlmsagu2.jpg'
 ];
 
 print
@@ -17,7 +17,7 @@ function changeBackground() {
 }
 
 // Change background image every 5 seconds (5000 milliseconds)
-setInterval(changeBackground, 5000);
+setInterval(changeBackground, 10000);
 
 // Initial background image
 changeBackground();
@@ -87,6 +87,8 @@ let orderDetails = ""; // Tambahkan variabel untuk menyimpan rincian pesanan
       let customerName = document.getElementById('customerName').value;
       let phoneNumber = document.getElementById('phoneNumber').value;
       let selectedOrder = document.getElementById('selectedOrder').value;
+      let selectedOrder2 = document.getElementById('selectedOrder2').value;
+      let selectedOrder3 = document.getElementById('selectedOrder3').value;
       let orderQuantity = document.getElementById('orderQuantity').value;
       let deliveryAddress = document.getElementById('deliveryAddress').value;
 
@@ -95,6 +97,8 @@ let orderDetails = ""; // Tambahkan variabel untuk menyimpan rincian pesanan
         Nama: ${customerName}
         Nomor Telepon: ${phoneNumber}
         Pilihan Pesanan: ${selectedOrder}
+        Pilihan Minuman: ${selectedOrder2}
+        Pilihan Nasi : ${selectedOrder3}
         Jumlah: ${orderQuantity}
         Alamat Pengiriman: ${deliveryAddress}
       `;
@@ -112,6 +116,8 @@ let orderDetails = ""; // Tambahkan variabel untuk menyimpan rincian pesanan
       document.getElementById('customerName').value = "";
       document.getElementById('phoneNumber').value = "";
       document.getElementById('selectedOrder').value = "";
+      document.getElementById('selectedOrder2').value = "";
+      document.getElementById('selectedOrder3').value = "";
       document.getElementById('orderQuantity').value = "";
       document.getElementById('deliveryAddress').value = "";
     }
@@ -127,6 +133,8 @@ let orderDetails = ""; // Tambahkan variabel untuk menyimpan rincian pesanan
       let customerName = document.getElementById('customerName').value;
       let phoneNumber = document.getElementById('phoneNumber').value;
       let selectedOrder = document.getElementById('selectedOrder').value;
+      let selectedOrder2 = document.getElementById('selectedOrder2').value;
+      let selectedOrder3 = document.getElementById('selectedOrder3').value;
       let orderQuantity = document.getElementById('orderQuantity').value;
       let deliveryAddress = document.getElementById('deliveryAddress').value;
 
@@ -137,6 +145,8 @@ let orderDetails = ""; // Tambahkan variabel untuk menyimpan rincian pesanan
         Nama: ${customerName}
         Nomor Telepon: ${phoneNumber}
         Pilihan Pesanan: ${selectedOrder}
+        Pilihan Minuman: ${selectedOrder2}
+        Pilihan Nasi : ${selectedOrder3}
         Jumlah: ${orderQuantity}
         Alamat Pengiriman: ${deliveryAddress}
       `;
